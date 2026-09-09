@@ -5069,12 +5069,15 @@ body.light-theme .service-icon i,
 body.light-theme .feature-icon i,
 body.light-theme .dept-icon i,
 body.light-theme .contact-dept-icon i,
-body.light-theme .service-features li i,
 body.light-theme .subpage-prose ul li i,
 body.light-theme .contact-icon i,
 body.light-theme .faq-question i,
 body.light-theme .about-experience-badge i {
   color: #062b40 !important;
+}
+
+body.light-theme .service-features li i {
+  color: #de4b26 !important;
 }
 
 /* Day Mode Contact Cards */
@@ -5107,55 +5110,7 @@ body.light-theme .contact-dept-card:hover .dept-icon i {
   color: #de4b26 !important;
 }
 
-/* Day Mode Buttons: Deep Navy with White Text & White Icons */
-body.light-theme .btn-primary-hero,
-body.light-theme .btn-secondary-hero,
-body.light-theme .btn-explore-offer,
-body.light-theme .btn-submit-form,
-body.light-theme .btn-card,
-body.light-theme .card-phone-btn,
-body.light-theme .hero-btn-primary,
-body.light-theme .hero-btn-secondary {
-  background: #062b40 !important;
-  border: 1px solid #062b40 !important;
-  color: #ffffff !important;
-}
-
-body.light-theme .btn-primary-hero i,
-body.light-theme .btn-secondary-hero i,
-body.light-theme .btn-explore-offer i,
-body.light-theme .btn-submit-form i,
-body.light-theme .btn-card i,
-body.light-theme .card-phone-btn i,
-body.light-theme .hero-btn-primary i,
-body.light-theme .hero-btn-secondary i {
-  color: #ffffff !important;
-}
-
-/* Day Mode Buttons Hover: Vibrant Brand Orange (#de4b26) with White Text & White Icons */
-body.light-theme .btn-primary-hero:hover,
-body.light-theme .btn-secondary-hero:hover,
-body.light-theme .btn-explore-offer:hover,
-body.light-theme .btn-submit-form:hover,
-body.light-theme .btn-card:hover,
-body.light-theme .card-phone-btn:hover,
-body.light-theme .hero-btn-primary:hover,
-body.light-theme .hero-btn-secondary:hover {
-  background: #de4b26 !important;
-  border-color: #de4b26 !important;
-  color: #ffffff !important;
-}
-
-body.light-theme .btn-primary-hero:hover i,
-body.light-theme .btn-secondary-hero:hover i,
-body.light-theme .btn-explore-offer:hover i,
-body.light-theme .btn-submit-form:hover i,
-body.light-theme .btn-card:hover i,
-body.light-theme .card-phone-btn:hover i,
-body.light-theme .hero-btn-primary:hover i,
-body.light-theme .hero-btn-secondary:hover i {
-  color: #ffffff !important;
-}
+/* Day Mode Buttons: Delegated to Master Button Architecture (lines 6023+) */
 
 /* Day Mode Center Wheel Action Buttons (Phone & Mail):
    Normal: Granat bg, White icon
@@ -5322,55 +5277,11 @@ body:not(.light-theme) .contact-dept-card:hover .dept-icon i {
   color: #ffffff !important;
 }
 
-/* Night Mode Buttons: Crisp White with Dark Text */
-body:not(.light-theme) .btn-primary-hero,
-body:not(.light-theme) .btn-secondary-hero,
-body:not(.light-theme) .btn-explore-offer,
-body:not(.light-theme) .btn-submit-form,
-body:not(.light-theme) .btn-card,
-body:not(.light-theme) .card-phone-btn,
-body:not(.light-theme) .hero-btn-primary,
-body:not(.light-theme) .hero-btn-secondary {
-  background: #ffffff !important;
-  border: 1px solid #ffffff !important;
-  color: #1a222c !important;
-}
-
-body:not(.light-theme) .btn-primary-hero i,
-body:not(.light-theme) .btn-secondary-hero i,
-body:not(.light-theme) .btn-explore-offer i,
-body:not(.light-theme) .btn-submit-form i,
-body:not(.light-theme) .btn-card i,
-body:not(.light-theme) .card-phone-btn i,
-body:not(.light-theme) .hero-btn-primary i,
-body:not(.light-theme) .hero-btn-secondary i {
-  color: #1a222c !important;
-}
-
-/* Night Mode Buttons Hover: Vibrant Brand Orange (#de4b26) with White Text & White Icons */
-body:not(.light-theme) .btn-primary-hero:hover,
-body:not(.light-theme) .btn-secondary-hero:hover,
-body:not(.light-theme) .btn-explore-offer:hover,
-body:not(.light-theme) .btn-submit-form:hover,
-body:not(.light-theme) .btn-card:hover,
-body:not(.light-theme) .card-phone-btn:hover,
-body:not(.light-theme) .hero-btn-primary:hover,
-body:not(.light-theme) .hero-btn-secondary:hover,
+/* Night Mode Buttons: Delegated to Master Button Architecture (lines 6023+) */
 body:not(.light-theme) .filter-btn.active,
 body:not(.light-theme) .filter-btn:hover {
   background: #de4b26 !important;
   border-color: #de4b26 !important;
-  color: #ffffff !important;
-}
-
-body:not(.light-theme) .btn-primary-hero:hover i,
-body:not(.light-theme) .btn-secondary-hero:hover i,
-body:not(.light-theme) .btn-explore-offer:hover i,
-body:not(.light-theme) .btn-submit-form:hover i,
-body:not(.light-theme) .btn-card:hover i,
-body:not(.light-theme) .card-phone-btn:hover i,
-body:not(.light-theme) .hero-btn-primary:hover i,
-body:not(.light-theme) .hero-btn-secondary:hover i {
   color: #ffffff !important;
 }
 
@@ -6029,7 +5940,6 @@ body.light-theme .showcase-btn-secondary:hover * {
 
 body:not(.light-theme) .btn-explore-offer,
 body:not(.light-theme) .btn-card,
-body:not(.light-theme) .card-phone-btn,
 body:not(.light-theme) .btn-primary-hero,
 body:not(.light-theme) .btn-secondary-hero,
 body:not(.light-theme) .btn-primary,
@@ -6052,19 +5962,37 @@ body:not(.light-theme) .icon-circle-badge {
 }
 
 body:not(.light-theme) .btn-explore-offer *,
+body:not(.light-theme) .btn-explore-offer i,
 body:not(.light-theme) .btn-card *,
-body:not(.light-theme) .card-phone-btn *,
+body:not(.light-theme) .btn-card i,
 body:not(.light-theme) .btn-primary-hero *,
+body:not(.light-theme) .btn-primary-hero i,
 body:not(.light-theme) .btn-secondary-hero *,
+body:not(.light-theme) .btn-secondary-hero i,
 body:not(.light-theme) .btn-primary *,
+body:not(.light-theme) .btn-primary i,
 body:not(.light-theme) .btn-submit *,
+body:not(.light-theme) .btn-submit i,
 body:not(.light-theme) .btn-read-article *,
+body:not(.light-theme) .btn-read-article i,
+body:not(.light-theme) .btn-submit-form *,
+body:not(.light-theme) .btn-submit-form i,
 body:not(.light-theme) .subpage-hero-actions .btn-primary-hero *,
+body:not(.light-theme) .subpage-hero-actions .btn-primary-hero i,
 body:not(.light-theme) .subpage-hero-actions .btn-secondary-hero *,
+body:not(.light-theme) .subpage-hero-actions .btn-secondary-hero i,
 body:not(.light-theme) .showcase-btn-primary *,
+body:not(.light-theme) .showcase-btn-primary i,
 body:not(.light-theme) .showcase-btn-secondary *,
+body:not(.light-theme) .showcase-btn-secondary i,
 body:not(.light-theme) .sidebar-cta-box .btn-primary-hero *,
+body:not(.light-theme) .sidebar-cta-box .btn-primary-hero i,
+body:not(.light-theme) .service-footer .btn-primary-hero *,
+body:not(.light-theme) .service-footer .btn-primary-hero i,
+body:not(.light-theme) .service-footer a *,
+body:not(.light-theme) .service-footer a i,
 body:not(.light-theme) .hub-action-btn *,
+body:not(.light-theme) .hub-action-btn i,
 body:not(.light-theme) .feature-circle-badge *,
 body:not(.light-theme) .subpage-feat-icon *,
 body:not(.light-theme) .icon-circle-badge * {
@@ -6075,17 +6003,19 @@ body:not(.light-theme) .icon-circle-badge * {
 /* Night Mode HOVER: Fills pure white, navy text & navy icons */
 body:not(.light-theme) .btn-explore-offer:hover,
 body:not(.light-theme) .btn-card:hover,
-body:not(.light-theme) .card-phone-btn:hover,
 body:not(.light-theme) .btn-primary-hero:hover,
 body:not(.light-theme) .btn-secondary-hero:hover,
 body:not(.light-theme) .btn-primary:hover,
 body:not(.light-theme) .btn-submit:hover,
 body:not(.light-theme) .btn-read-article:hover,
+body:not(.light-theme) .btn-submit-form:hover,
 body:not(.light-theme) .subpage-hero-actions .btn-primary-hero:hover,
 body:not(.light-theme) .subpage-hero-actions .btn-secondary-hero:hover,
 body:not(.light-theme) .showcase-btn-primary:hover,
 body:not(.light-theme) .showcase-btn-secondary:hover,
 body:not(.light-theme) .sidebar-cta-box .btn-primary-hero:hover,
+body:not(.light-theme) .service-footer .btn-primary-hero:hover,
+body:not(.light-theme) .service-footer a:hover,
 body:not(.light-theme) .hub-action-btn:hover,
 body:not(.light-theme) .feature-circle-badge:hover,
 body:not(.light-theme) .subpage-feat-card:hover .subpage-feat-icon,
@@ -6099,19 +6029,37 @@ body:not(.light-theme) .knowledge-card:hover .feature-circle-badge {
 }
 
 body:not(.light-theme) .btn-explore-offer:hover *,
+body:not(.light-theme) .btn-explore-offer:hover i,
 body:not(.light-theme) .btn-card:hover *,
-body:not(.light-theme) .card-phone-btn:hover *,
+body:not(.light-theme) .btn-card:hover i,
 body:not(.light-theme) .btn-primary-hero:hover *,
+body:not(.light-theme) .btn-primary-hero:hover i,
 body:not(.light-theme) .btn-secondary-hero:hover *,
+body:not(.light-theme) .btn-secondary-hero:hover i,
 body:not(.light-theme) .btn-primary:hover *,
+body:not(.light-theme) .btn-primary:hover i,
 body:not(.light-theme) .btn-submit:hover *,
+body:not(.light-theme) .btn-submit:hover i,
 body:not(.light-theme) .btn-read-article:hover *,
+body:not(.light-theme) .btn-read-article:hover i,
+body:not(.light-theme) .btn-submit-form:hover *,
+body:not(.light-theme) .btn-submit-form:hover i,
 body:not(.light-theme) .subpage-hero-actions .btn-primary-hero:hover *,
+body:not(.light-theme) .subpage-hero-actions .btn-primary-hero:hover i,
 body:not(.light-theme) .subpage-hero-actions .btn-secondary-hero:hover *,
+body:not(.light-theme) .subpage-hero-actions .btn-secondary-hero:hover i,
 body:not(.light-theme) .showcase-btn-primary:hover *,
+body:not(.light-theme) .showcase-btn-primary:hover i,
 body:not(.light-theme) .showcase-btn-secondary:hover *,
+body:not(.light-theme) .showcase-btn-secondary:hover i,
 body:not(.light-theme) .sidebar-cta-box .btn-primary-hero:hover *,
+body:not(.light-theme) .sidebar-cta-box .btn-primary-hero:hover i,
+body:not(.light-theme) .service-footer .btn-primary-hero:hover *,
+body:not(.light-theme) .service-footer .btn-primary-hero:hover i,
+body:not(.light-theme) .service-footer a:hover *,
+body:not(.light-theme) .service-footer a:hover i,
 body:not(.light-theme) .hub-action-btn:hover *,
+body:not(.light-theme) .hub-action-btn:hover i,
 body:not(.light-theme) .feature-circle-badge:hover *,
 body:not(.light-theme) .subpage-feat-card:hover .subpage-feat-icon *,
 body:not(.light-theme) .feature-card:hover .feature-circle-badge *,
@@ -6125,17 +6073,19 @@ body:not(.light-theme) .knowledge-card:hover .feature-circle-badge * {
 
 body.light-theme .btn-explore-offer,
 body.light-theme .btn-card,
-body.light-theme .card-phone-btn,
 body.light-theme .btn-primary-hero,
 body.light-theme .btn-secondary-hero,
 body.light-theme .btn-primary,
 body.light-theme .btn-submit,
 body.light-theme .btn-read-article,
+body.light-theme .btn-submit-form,
 body.light-theme .subpage-hero-actions .btn-primary-hero,
 body.light-theme .subpage-hero-actions .btn-secondary-hero,
 body.light-theme .showcase-btn-primary,
 body.light-theme .showcase-btn-secondary,
 body.light-theme .sidebar-cta-box .btn-primary-hero,
+body.light-theme .service-footer .btn-primary-hero,
+body.light-theme .service-footer a,
 body.light-theme .hub-action-btn,
 body.light-theme .feature-circle-badge,
 body.light-theme .subpage-feat-icon,
@@ -6149,19 +6099,37 @@ body.light-theme .icon-circle-badge {
 }
 
 body.light-theme .btn-explore-offer *,
+body.light-theme .btn-explore-offer i,
 body.light-theme .btn-card *,
-body.light-theme .card-phone-btn *,
+body.light-theme .btn-card i,
 body.light-theme .btn-primary-hero *,
+body.light-theme .btn-primary-hero i,
 body.light-theme .btn-secondary-hero *,
+body.light-theme .btn-secondary-hero i,
 body.light-theme .btn-primary *,
+body.light-theme .btn-primary i,
 body.light-theme .btn-submit *,
+body.light-theme .btn-submit i,
 body.light-theme .btn-read-article *,
+body.light-theme .btn-read-article i,
+body.light-theme .btn-submit-form *,
+body.light-theme .btn-submit-form i,
 body.light-theme .subpage-hero-actions .btn-primary-hero *,
+body.light-theme .subpage-hero-actions .btn-primary-hero i,
 body.light-theme .subpage-hero-actions .btn-secondary-hero *,
+body.light-theme .subpage-hero-actions .btn-secondary-hero i,
 body.light-theme .showcase-btn-primary *,
+body.light-theme .showcase-btn-primary i,
 body.light-theme .showcase-btn-secondary *,
+body.light-theme .showcase-btn-secondary i,
 body.light-theme .sidebar-cta-box .btn-primary-hero *,
+body.light-theme .sidebar-cta-box .btn-primary-hero i,
+body.light-theme .service-footer .btn-primary-hero *,
+body.light-theme .service-footer .btn-primary-hero i,
+body.light-theme .service-footer a *,
+body.light-theme .service-footer a i,
 body.light-theme .hub-action-btn *,
+body.light-theme .hub-action-btn i,
 body.light-theme .feature-circle-badge *,
 body.light-theme .subpage-feat-icon *,
 body.light-theme .icon-circle-badge * {
@@ -6172,17 +6140,19 @@ body.light-theme .icon-circle-badge * {
 /* Day Mode HOVER: Fills deep navy, white text & white icons */
 body.light-theme .btn-explore-offer:hover,
 body.light-theme .btn-card:hover,
-body.light-theme .card-phone-btn:hover,
 body.light-theme .btn-primary-hero:hover,
 body.light-theme .btn-secondary-hero:hover,
 body.light-theme .btn-primary:hover,
 body.light-theme .btn-submit:hover,
 body.light-theme .btn-read-article:hover,
+body.light-theme .btn-submit-form:hover,
 body.light-theme .subpage-hero-actions .btn-primary-hero:hover,
 body.light-theme .subpage-hero-actions .btn-secondary-hero:hover,
 body.light-theme .showcase-btn-primary:hover,
 body.light-theme .showcase-btn-secondary:hover,
 body.light-theme .sidebar-cta-box .btn-primary-hero:hover,
+body.light-theme .service-footer .btn-primary-hero:hover,
+body.light-theme .service-footer a:hover,
 body.light-theme .hub-action-btn:hover,
 body.light-theme .feature-circle-badge:hover,
 body.light-theme .subpage-feat-card:hover .subpage-feat-icon,
@@ -6196,23 +6166,63 @@ body.light-theme .knowledge-card:hover .feature-circle-badge {
 }
 
 body.light-theme .btn-explore-offer:hover *,
+body.light-theme .btn-explore-offer:hover i,
 body.light-theme .btn-card:hover *,
-body.light-theme .card-phone-btn:hover *,
+body.light-theme .btn-card:hover i,
 body.light-theme .btn-primary-hero:hover *,
+body.light-theme .btn-primary-hero:hover i,
 body.light-theme .btn-secondary-hero:hover *,
+body.light-theme .btn-secondary-hero:hover i,
 body.light-theme .btn-primary:hover *,
+body.light-theme .btn-primary:hover i,
 body.light-theme .btn-submit:hover *,
+body.light-theme .btn-submit:hover i,
 body.light-theme .btn-read-article:hover *,
+body.light-theme .btn-read-article:hover i,
+body.light-theme .btn-submit-form:hover *,
+body.light-theme .btn-submit-form:hover i,
 body.light-theme .subpage-hero-actions .btn-primary-hero:hover *,
+body.light-theme .subpage-hero-actions .btn-primary-hero:hover i,
 body.light-theme .subpage-hero-actions .btn-secondary-hero:hover *,
+body.light-theme .subpage-hero-actions .btn-secondary-hero:hover i,
 body.light-theme .showcase-btn-primary:hover *,
+body.light-theme .showcase-btn-primary:hover i,
 body.light-theme .showcase-btn-secondary:hover *,
+body.light-theme .showcase-btn-secondary:hover i,
 body.light-theme .sidebar-cta-box .btn-primary-hero:hover *,
+body.light-theme .sidebar-cta-box .btn-primary-hero:hover i,
+body.light-theme .service-footer .btn-primary-hero:hover *,
+body.light-theme .service-footer .btn-primary-hero:hover i,
+body.light-theme .service-footer a:hover *,
+body.light-theme .service-footer a:hover i,
 body.light-theme .hub-action-btn:hover *,
 body.light-theme .feature-circle-badge:hover *,
 body.light-theme .subpage-feat-card:hover .subpage-feat-icon *,
 body.light-theme .feature-card:hover .feature-circle-badge *,
 body.light-theme .knowledge-card:hover .feature-circle-badge * {
+  color: #ffffff !important;
+}
+
+/* Service Card Call Button Explicit Icon & Text Contract */
+.service-footer .btn-primary-hero {
+  border-radius: var(--radius-pill) !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+}
+
+body:not(.light-theme) .service-footer .btn-primary-hero i {
+  color: #ffffff !important;
+}
+
+body:not(.light-theme) .service-footer .btn-primary-hero:hover i {
+  color: #062b40 !important;
+}
+
+body.light-theme .service-footer .btn-primary-hero i {
+  color: #062b40 !important;
+}
+
+body.light-theme .service-footer .btn-primary-hero:hover i {
   color: #ffffff !important;
 }
 

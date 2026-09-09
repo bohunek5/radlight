@@ -6226,6 +6226,25 @@ body.light-theme .service-footer .btn-primary-hero:hover i {
   color: #ffffff !important;
 }
 
+/* Contact Page Department Cards Polish (1 line titles & balanced grid) */
+.services-section .services-grid .service-title {
+  font-size: 1.15rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.01em !important;
+}
+
+@media (min-width: 992px) {
+  .services-section .services-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+  }
+  .services-section .services-grid .service-title {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
 
 /* ==========================================================================
    PRESTIGE LUXURY FOOTER ARCHITECTURE

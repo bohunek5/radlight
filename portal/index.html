@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pl"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-IdLb722Tg5HMrQ+kEen/XUHymP54O0Z4L11RnmvR/GA=' 'sha256-2YA5MPDeougsgfu0JXANcg4viTgr2d3JY/7/uWSxCl4='; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'self'; font-src data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-5z/DviczkWJiY+55h7WD7SIpfHx7VXrEBh/ESr0BQi4=' 'sha256-vTxPYwLbuisMCYAHP/tZmZrr+1SO57ygKpGNoytfQBU='; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'self'; font-src data:; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>RADLIGHT · Autonomiczne biuro</title>
 <style>*{box-sizing:border-box}body{margin:0;background:#f4f7fa;color:#062b40;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100dvh;display:grid;place-items:center;padding:28px}main{width:min(390px,100%)}.brand{display:flex;align-items:center;gap:14px;margin-bottom:58px;font-weight:700;letter-spacing:.08em;font-size:25px}.brand img{width:49px;height:49px;object-fit:contain}.eyebrow{font-size:10px;letter-spacing:.16em;color:#698292;text-transform:uppercase}h1{font-size:32px;font-weight:580;letter-spacing:-1px;line-height:1.2;margin:13px 0 30px}label{display:block;font-size:13px;margin-bottom:8px}input{display:block;width:100%;font:inherit;background:white;border:1px solid #c3d1da;border-radius:3px;padding:13px 14px}input:focus-visible,button:focus-visible{outline:2px solid #de4b26;outline-offset:3px}button{width:100%;margin-top:15px;border:0;border-radius:3px;background:#de4b26;color:white;padding:14px;font:inherit;font-weight:600;cursor:pointer}button:disabled{opacity:.6;cursor:wait}#error{color:#9f4439;font-size:13px;min-height:20px;margin:12px 0 0}.note{font-size:12px;color:#637e8e;margin-top:28px;line-height:1.75}footer{border-top:1px solid #dbe5eb;margin-top:26px;padding-top:17px;font-size:11px;color:#748b99}</style>
 </head><body><main>
@@ -10,7 +10,7 @@
 <form id="unlock"><label for="password">Hasło dostępu</label><input id="password" type="password" autocomplete="current-password" required autofocus><button id="submit" type="submit">Otwórz podgląd</button><p id="error" role="alert" aria-live="polite"></p></form>
 <p class="note">Przetestuj zadania i rezerwacje. To oddzielny podgląd bez firmowych kont i danych. Zmiany znikają po odświeżeniu i nie trafiają do innych osób. Nie wpisuj prawdziwych danych.</p><footer>Zawartość podglądu jest zaszyfrowana.</footer>
 </main><script>
-const config={"salt":"LoOVrNqxT/vQIONwZjo2rg==","iv":"pWuiV+Os5WjPiYVQ","iterations":600000,"payload":"office.enc"};
+const config={"salt":"zfj/+as/3qPPSqsp+fNQSw==","iv":"yLYtJBeVz9R2JSmv","iterations":600000,"payload":"office.enc"};
 const form=document.getElementById('unlock'),field=document.getElementById('password'),button=document.getElementById('submit'),error=document.getElementById('error');
 const bytes=text=>Uint8Array.from(atob(text),char=>char.charCodeAt(0));
 form.addEventListener('submit',async event=>{
